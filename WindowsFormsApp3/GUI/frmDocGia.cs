@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3.GUI
 {
-    public partial class frmBangCap : Form
+    public partial class frmDocGia : Form
     {
-        public frmBangCap()
+        public frmDocGia()
         {
             InitializeComponent();
         }

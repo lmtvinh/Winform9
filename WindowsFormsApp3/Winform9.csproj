@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BangCap.cs" />
+    <Compile Include="BLL\ChiTietPhieuMuon.cs" />
+    <Compile Include="BLL\DocGia.cs" />
+    <Compile Include="BLL\NhanVien.cs" />
+    <Compile Include="BLL\PhieuMuonSach.cs" />
+    <Compile Include="BLL\PhieuThuTien.cs" />
+    <Compile Include="BLL\Sach.cs" />
     <Compile Include="DAL\Database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,7 +60,42 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmBangCap.cs" />
+    <Compile Include="GUI\frmBangCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBangCap.Designer.cs">
+      <DependentUpon>frmBangCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPhieuMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhieuMuonSach.Designer.cs">
+      <DependentUpon>frmPhieuMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThuTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThuTien.Designer.cs">
+      <DependentUpon>frmThuTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
