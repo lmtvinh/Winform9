@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3.BLL
 {
-    internal class Sach
+    public class Sach
     {
+
     }
 }
