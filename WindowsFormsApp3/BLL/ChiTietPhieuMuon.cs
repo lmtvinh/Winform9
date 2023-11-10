@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp3.DAL;
 
 namespace WindowsFormsApp3.BLL
 {
-    internal class ChiTietPhieuMuon
+    public class ChiTietPhieuMuon
     {
+        
     }
 }
