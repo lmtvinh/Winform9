@@ -440,7 +440,8 @@
                 <Value>BÁO CÁO BẰNG CẤP CỦA NHÂN VIÊN</Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
-                  <FontSize>12pt</FontSize>
+                  <FontSize>18pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -451,9 +452,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>0.19667in</Top>
-        <Left>2.55083in</Left>
-        <Height>0.25in</Height>
-        <Width>2.86458in</Width>
+        <Left>1.74875in</Left>
+        <Height>0.41667in</Height>
+        <Width>4.9184in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
