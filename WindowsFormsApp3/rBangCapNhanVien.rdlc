@@ -472,7 +472,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Số Lượng Nhân Viên: </Value>
+                <Value EvaluationMode="Constant">Số Lượng Nhân Viên:</Value>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
                 </Style>

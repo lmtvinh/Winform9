@@ -32,9 +32,17 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.qLThuVienDataSet = new WindowsFormsApp3.QLThuVienDataSet();
+<<<<<<< Updated upstream
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.NHANVIENTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).BeginInit();
+=======
+            this.qLThuVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.NHANVIENTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSetBindingSource)).BeginInit();
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,10 +64,22 @@
             this.qLThuVienDataSet.DataSetName = "QLThuVienDataSet";
             this.qLThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+<<<<<<< Updated upstream
             // nHANVIENBindingSource
             // 
             this.nHANVIENBindingSource.DataMember = "NHANVIEN";
             this.nHANVIENBindingSource.DataSource = this.qLThuVienDataSet;
+=======
+            // qLThuVienDataSetBindingSource
+            // 
+            this.qLThuVienDataSetBindingSource.DataSource = this.qLThuVienDataSet;
+            this.qLThuVienDataSetBindingSource.Position = 0;
+            // 
+            // nHANVIENBindingSource
+            // 
+            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource.DataSource = this.qLThuVienDataSetBindingSource;
+>>>>>>> Stashed changes
             // 
             // nHANVIENTableAdapter
             // 
@@ -77,6 +97,10 @@
             this.Text = "frmBangCapNhanVien";
             this.Load += new System.EventHandler(this.frmBangCapNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).EndInit();
+<<<<<<< Updated upstream
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSetBindingSource)).EndInit();
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -85,6 +109,10 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+<<<<<<< Updated upstream
+=======
+        private System.Windows.Forms.BindingSource qLThuVienDataSetBindingSource;
+>>>>>>> Stashed changes
         private QLThuVienDataSet qLThuVienDataSet;
         private System.Windows.Forms.BindingSource nHANVIENBindingSource;
         private QLThuVienDataSetTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;

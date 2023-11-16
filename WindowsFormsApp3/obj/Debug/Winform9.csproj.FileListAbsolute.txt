@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 F:\C#\Winform9\WindowsFormsApp3\bin\Debug\x86\SqlServerSpatial160.dll
 F:\C#\Winform9\WindowsFormsApp3\bin\Debug\x64\SqlServerSpatial160.dll
 F:\C#\Winform9\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
@@ -75,6 +76,8 @@ F:\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.CoreCompileInputs.cach
 F:\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.CopyComplete
 F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+=======
+>>>>>>> Stashed changes
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\bin\Debug\x86\SqlServerSpatial160.dll
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\bin\Debug\x64\SqlServerSpatial160.dll
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
@@ -141,7 +144,10 @@ C:\WorkSpace\C#\Winform9\WindowsFormsApp3\bin\Debug\zh-Hant\Microsoft.SqlServer.
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.AssemblyReference.cache
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.SuggestedBindingRedirects.cache
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe.config
+<<<<<<< Updated upstream
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.fDMSach.resources
+=======
+>>>>>>> Stashed changes
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmBangCapNhanVien.resources
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmDocGia.resources
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmManager.resources
