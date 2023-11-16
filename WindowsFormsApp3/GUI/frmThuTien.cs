@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
+
 using System.Windows.Forms.VisualStyles;
->>>>>>> 687180e7866ea2c40616ebab14efe3882e46924f
+
 using WindowsFormsApp3.BLL;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -65,8 +64,6 @@ namespace WindowsFormsApp3.GUI
             btnLuu.Enabled = !val;
             btnHuy.Enabled = !val;
         }
-<<<<<<< HEAD
-=======
 
         bool checkValue()
         {
@@ -88,7 +85,6 @@ namespace WindowsFormsApp3.GUI
             }
             return true;
         }
->>>>>>> 687180e7866ea2c40616ebab14efe3882e46924f
         private void frmPhieuThu_Load(object sender, EventArgs e)
         {
             setButton(true);
@@ -156,7 +152,6 @@ namespace WindowsFormsApp3.GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             //Định dạng ngày tương ứng với trong CSDL SQLserver
             if (themmoi)
             {
@@ -171,7 +166,7 @@ namespace WindowsFormsApp3.GUI
             setButton(true);
             HienthiPhieuThu();
             setNull();
-=======
+
             if (checkValue())
             {
                 if (themmoi)
@@ -190,7 +185,7 @@ namespace WindowsFormsApp3.GUI
                 HienthiPhieuThu();
                 setNull();
             }
->>>>>>> 687180e7866ea2c40616ebab14efe3882e46924f
+
         }
 
         private void cbbDocGia_SelectedIndexChanged(object sender, EventArgs e)
@@ -198,12 +193,10 @@ namespace WindowsFormsApp3.GUI
             if (cbbDocGia.SelectedItem != null)
             {
                 txtDocGia.Text = cbbDocGia.SelectedValue.ToString();
-<<<<<<< HEAD
-=======
                 cbbDocGia.ValueMember = "TienNo";
                 txtSoTienNo.Text = cbbDocGia.SelectedValue.ToString();
                 cbbDocGia.ValueMember = "MaDocGia";
->>>>>>> 687180e7866ea2c40616ebab14efe3882e46924f
+
             }
         }
 
@@ -214,17 +207,11 @@ namespace WindowsFormsApp3.GUI
                 txtNhanVien.Text = cbbNhanVien.SelectedValue.ToString();
             }
         }
-<<<<<<< HEAD
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-
-=======
-        private void btnBaoCao_Click(object sender, EventArgs e)
-        {
-            fThuTien form = new fThuTien();
+            frmThuTien form = new frmThuTien();
             form.Show();
->>>>>>> 687180e7866ea2c40616ebab14efe3882e46924f
         }
     }
 }
