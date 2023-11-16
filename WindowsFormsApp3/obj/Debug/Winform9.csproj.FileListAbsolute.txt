@@ -144,10 +144,7 @@ C:\WorkSpace\C#\Winform9\WindowsFormsApp3\bin\Debug\zh-Hant\Microsoft.SqlServer.
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.AssemblyReference.cache
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.SuggestedBindingRedirects.cache
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe.config
-<<<<<<< Updated upstream
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.fDMSach.resources
-=======
->>>>>>> Stashed changes
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmBangCapNhanVien.resources
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmDocGia.resources
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmManager.resources

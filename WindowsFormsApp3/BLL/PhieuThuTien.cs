@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 using WindowsFormsApp3.DAL;
 
 namespace WindowsFormsApp3.BLL
 {
-    public class PhieuThuTien
+    class PhieuThuTien
     {
         Database db;
         public PhieuThuTien()
@@ -21,7 +22,18 @@ namespace WindowsFormsApp3.BLL
             DataTable dt = db.Execute(strSQL); //Goi phuong thuc truy xuat du lieu
             return dt;
         }
-
+        public DataTable LayDocGia()
+        {
+            string strSQL = "Select * from DOCGIA";
+            DataTable dt = db.Execute(strSQL); //Goi phuong thuc truy xuat du lieu
+            return dt;
+        }
+        public DataTable LayNhanVien()
+        {
+            string strSQL = "Select * from NHANVIEN";
+            DataTable dt = db.Execute(strSQL); //Goi phuong thuc truy xuat du lieu
+            return dt;
+        }
         public void XoaPhieuThu(string index_pt)
         {
             string sql = "Delete from PHIEUTHUTIEN where MaPhieuThuTien = " + index_pt;

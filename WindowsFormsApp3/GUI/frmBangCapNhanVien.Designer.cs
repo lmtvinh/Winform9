@@ -32,17 +32,9 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.qLThuVienDataSet = new WindowsFormsApp3.QLThuVienDataSet();
-<<<<<<< Updated upstream
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.NHANVIENTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).BeginInit();
-=======
-            this.qLThuVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nHANVIENTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.NHANVIENTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSetBindingSource)).BeginInit();
->>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +48,7 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(933, 588);
+            this.reportViewer1.Size = new System.Drawing.Size(627, 450);
             this.reportViewer1.TabIndex = 0;
             // 
             // qLThuVienDataSet
@@ -64,22 +56,10 @@
             this.qLThuVienDataSet.DataSetName = "QLThuVienDataSet";
             this.qLThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-<<<<<<< Updated upstream
             // nHANVIENBindingSource
             // 
             this.nHANVIENBindingSource.DataMember = "NHANVIEN";
             this.nHANVIENBindingSource.DataSource = this.qLThuVienDataSet;
-=======
-            // qLThuVienDataSetBindingSource
-            // 
-            this.qLThuVienDataSetBindingSource.DataSource = this.qLThuVienDataSet;
-            this.qLThuVienDataSetBindingSource.Position = 0;
-            // 
-            // nHANVIENBindingSource
-            // 
-            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
-            this.nHANVIENBindingSource.DataSource = this.qLThuVienDataSetBindingSource;
->>>>>>> Stashed changes
             // 
             // nHANVIENTableAdapter
             // 
@@ -87,20 +67,14 @@
             // 
             // frmBangCapNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 588);
+            this.ClientSize = new System.Drawing.Size(627, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBangCapNhanVien";
             this.Text = "frmBangCapNhanVien";
             this.Load += new System.EventHandler(this.frmBangCapNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).EndInit();
-<<<<<<< Updated upstream
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSetBindingSource)).EndInit();
->>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -109,10 +83,6 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-<<<<<<< Updated upstream
-=======
-        private System.Windows.Forms.BindingSource qLThuVienDataSetBindingSource;
->>>>>>> Stashed changes
         private QLThuVienDataSet qLThuVienDataSet;
         private System.Windows.Forms.BindingSource nHANVIENBindingSource;
         private QLThuVienDataSetTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;

@@ -148,15 +148,12 @@
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnExit);
             this.groupBox2.Controls.Add(this.btnCancel);
-<<<<<<< Updated upstream
             this.groupBox2.Location = new System.Drawing.Point(296, 242);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(617, 66);
-=======
             this.groupBox2.Location = new System.Drawing.Point(299, 242);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(614, 66);
->>>>>>> Stashed changes
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
@@ -349,11 +346,8 @@
             // 
             // btnReport
             // 
-<<<<<<< Updated upstream
             this.btnReport.Location = new System.Drawing.Point(527, 17);
-=======
             this.btnReport.Location = new System.Drawing.Point(526, 15);
->>>>>>> Stashed changes
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(81, 47);
             this.btnReport.TabIndex = 18;

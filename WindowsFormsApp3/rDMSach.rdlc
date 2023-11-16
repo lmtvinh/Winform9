@@ -756,8 +756,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>dsThuVien</rd:DataSetName>
-        <rd:SchemaPath>F:\C#\Tuần 9_Database\WindowsFormsApp3\WindowsFormsApp3\dsThuVien.xsd</rd:SchemaPath>
+        <rd:DataSetName>QLThuVienDataSet</rd:DataSetName>
+        <rd:SchemaPath>F:\C#\Winform9\WindowsFormsApp3\QLThuVienDataSet.xsd</rd:SchemaPath>
         <rd:TableName>SACH</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
