@@ -894,7 +894,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>QLThuVienDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\WorkSpace\C#\Winform9\WindowsFormsApp3\QLThuVienDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>F:\C#\Winform9\WindowsFormsApp3\QLThuVienDataSet.xsd</rd:SchemaPath>
         <rd:TableName>NHANVIEN</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

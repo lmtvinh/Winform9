@@ -26,11 +26,21 @@ namespace WindowsFormsApp3.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=QLThuVien;Persist Security Info=True;User I" +
-            "D=sa;Password=123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Database=QLThuVien;Persist Security Info=True")]
         public string QLThuVienConnectionString {
             get {
                 return ((string)(this["QLThuVienConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-Q1C6MKO\\TKNGUYEN;Initial Catalog=QLThuVien;Integrated Securit" +
+            "y=True")]
+        public string QLThuVienConnectionString1 {
+            get {
+                return ((string)(this["QLThuVienConnectionString1"]));
             }
         }
     }

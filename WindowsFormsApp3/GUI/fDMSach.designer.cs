@@ -34,10 +34,12 @@
             this.dsThuVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsThuVien = new WindowsFormsApp3.QLThuVienDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.sACHBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sACHTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.SACHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsThuVienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsThuVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // sACHBindingSource
@@ -59,7 +61,7 @@
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "dsSach";
-            reportDataSource1.Value = this.sACHBindingSource;
+            reportDataSource1.Value = this.sACHBindingSource1;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp3.rDMSach.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
@@ -67,6 +69,11 @@
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1256, 802);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // sACHBindingSource1
+            // 
+            this.sACHBindingSource1.DataMember = "SACH";
+            this.sACHBindingSource1.DataSource = this.dsThuVien;
             // 
             // sACHTableAdapter
             // 
@@ -84,16 +91,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsThuVienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsThuVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource dsThuVienBindingSource;
         private QLThuVienDataSet dsThuVien;
         private System.Windows.Forms.BindingSource sACHBindingSource;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource sACHBindingSource1;
         private QLThuVienDataSetTableAdapters.SACHTableAdapter sACHTableAdapter;
     }
 }

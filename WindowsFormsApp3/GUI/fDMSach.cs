@@ -21,7 +21,10 @@ namespace WindowsFormsApp3
         {
             // TODO: This line of code loads data into the 'dsThuVien.SACH' table. You can move, or remove it, as needed.
             this.sACHTableAdapter.Fill(this.dsThuVien.SACH);
+            // TODO: This line of code loads data into the 'dsThuVien.SACH' table. You can move, or remove it, as needed.
+            this.sACHTableAdapter.Fill(this.dsThuVien.SACH);
 
+            this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
     }

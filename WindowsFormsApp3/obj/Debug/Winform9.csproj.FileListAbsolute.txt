@@ -155,3 +155,8 @@ C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.CoreCompileI
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\Winform9.csproj.CopyComplete
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\WorkSpace\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.fThuTien.resources
+F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.FDocgiaNotien.resources
+F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmBangCap.resources
+F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.frmPhieuMuonSach.resources
+F:\C#\Winform9\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.GUI.fRPhieuMuon.resources

@@ -21,7 +21,10 @@ namespace WindowsFormsApp3.GUI
         {
             // TODO: This line of code loads data into the 'qLThuVienDataSet.NHANVIEN' table. You can move, or remove it, as needed.
             this.nHANVIENTableAdapter.Fill(this.qLThuVienDataSet.NHANVIEN);
+            // TODO: This line of code loads data into the 'qLThuVienDataSet.NHANVIEN' table. You can move, or remove it, as needed.
+            this.nHANVIENTableAdapter.Fill(this.qLThuVienDataSet.NHANVIEN);
 
+            this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace WindowsFormsApp3.GUI
 {
     partial class FDocgiaNotien
     {
@@ -30,15 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dsdocgiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsdocgia = new LapTheDocGia.dsdocgia();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dOCGIATableAdapter = new LapTheDocGia.dsdocgiaTableAdapters.DOCGIATableAdapter();
+            this.dsdocgiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dsdocgia = new WindowsFormsApp3.QLThuVienDataSet();
+            this.dOCGIATableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.DOCGIATableAdapter();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dOCGIABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsdocgiaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsdocgia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dOCGIABindingSource
+            // 
+            this.dOCGIABindingSource.DataMember = "DOCGIA";
+            this.dOCGIABindingSource.DataSource = this.dsdocgiaBindingSource;
             // 
             // dsdocgiaBindingSource
             // 
@@ -50,49 +57,52 @@
             this.dsdocgia.DataSetName = "dsdocgia";
             this.dsdocgia.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dOCGIABindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LapTheDocGia.rDocgiaNotien.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 1);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(798, 451);
-            this.reportViewer1.TabIndex = 0;
-            // 
-            // dOCGIABindingSource
-            // 
-            this.dOCGIABindingSource.DataMember = "DOCGIA";
-            this.dOCGIABindingSource.DataSource = this.dsdocgiaBindingSource;
-            // 
             // dOCGIATableAdapter
             // 
             this.dOCGIATableAdapter.ClearBeforeFill = true;
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.dOCGIABindingSource1;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp3.rDocgiaNotien.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1067, 554);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // dOCGIABindingSource1
+            // 
+            this.dOCGIABindingSource1.DataMember = "DOCGIA";
+            this.dOCGIABindingSource1.DataSource = this.dsdocgia;
+            // 
             // FDocgiaNotien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.reportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FDocgiaNotien";
             this.Text = "FDocgiaNotien";
             this.Load += new System.EventHandler(this.FDocgiaNotien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsdocgiaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsdocgia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource dsdocgiaBindingSource;
-        private dsdocgia dsdocgia;
+        private QLThuVienDataSet dsdocgia;
         private System.Windows.Forms.BindingSource dOCGIABindingSource;
-        private dsdocgiaTableAdapters.DOCGIATableAdapter dOCGIATableAdapter;
+        private QLThuVienDataSetTableAdapters.DOCGIATableAdapter dOCGIATableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource dOCGIABindingSource1;
     }
 }

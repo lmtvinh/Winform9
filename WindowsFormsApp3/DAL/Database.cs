@@ -15,7 +15,7 @@ namespace WindowsFormsApp3.DAL
         DataSet ds;
         public Database()
         {
-            string strCnn = "Data Source= localhost; Database=QLThuVien;Integrated Security = True";
+            string strCnn = "Data Source=DESKTOP-Q1C6MKO\\TKNGUYEN; Database=QLThuVien;Integrated Security = True";
             sqlConn = new SqlConnection(strCnn);
         }
 

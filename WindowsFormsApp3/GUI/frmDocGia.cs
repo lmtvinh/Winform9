@@ -12,12 +12,12 @@ using WindowsFormsApp3.BLL;
 
 namespace WindowsFormsApp3.GUI
 {
-    public partial class frmdocgia : Form
+    public partial class frmDocGia : Form
     {
 
         public bool themmoi = false;
         DocGia dg = new DocGia();
-        public frmdocgia()
+        public frmDocGia()
         {
             InitializeComponent();
         }

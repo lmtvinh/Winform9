@@ -23,6 +23,7 @@ namespace WindowsFormsApp3.GUI
             this.dOCGIATableAdapter.Fill(this.dsdocgia.DOCGIA);
            
             this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
     }
 }
