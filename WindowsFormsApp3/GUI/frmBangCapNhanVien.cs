@@ -19,6 +19,8 @@ namespace WindowsFormsApp3.GUI
 
         private void frmBangCapNhanVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLThuVienDataSet.NHANVIEN' table. You can move, or remove it, as needed.
+            this.nHANVIENTableAdapter.Fill(this.qLThuVienDataSet.NHANVIEN);
 
             this.reportViewer1.RefreshReport();
         }

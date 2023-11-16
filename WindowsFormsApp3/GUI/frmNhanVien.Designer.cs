@@ -56,6 +56,7 @@
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -140,15 +141,16 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.btnReport);
             this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Controls.Add(this.btnUpdate);
             this.groupBox2.Controls.Add(this.btnAdd);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnExit);
             this.groupBox2.Controls.Add(this.btnCancel);
-            this.groupBox2.Location = new System.Drawing.Point(385, 242);
+            this.groupBox2.Location = new System.Drawing.Point(296, 242);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(528, 66);
+            this.groupBox2.Size = new System.Drawing.Size(617, 66);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
@@ -339,6 +341,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "DANH MỤC NHÂN VIÊN";
             // 
+            // btnReport
+            // 
+            this.btnReport.Location = new System.Drawing.Point(527, 17);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(81, 47);
+            this.btnReport.TabIndex = 18;
+            this.btnReport.Text = "Hiện Báo Cáo";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -390,5 +402,6 @@
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReport;
     }
 }

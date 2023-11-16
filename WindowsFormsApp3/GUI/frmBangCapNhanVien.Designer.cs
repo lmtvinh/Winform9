@@ -28,17 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.qLThuVienDataSet = new WindowsFormsApp3.QLThuVienDataSet();
+            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENTableAdapter = new WindowsFormsApp3.QLThuVienDataSetTableAdapters.NHANVIENTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.nHANVIENBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp3.rBangCapNhanVien.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(933, 588);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // qLThuVienDataSet
+            // 
+            this.qLThuVienDataSet.DataSetName = "QLThuVienDataSet";
+            this.qLThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nHANVIENBindingSource
+            // 
+            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource.DataSource = this.qLThuVienDataSet;
+            // 
+            // nHANVIENTableAdapter
+            // 
+            this.nHANVIENTableAdapter.ClearBeforeFill = true;
             // 
             // frmBangCapNhanVien
             // 
@@ -51,6 +76,8 @@
             this.Name = "frmBangCapNhanVien";
             this.Text = "frmBangCapNhanVien";
             this.Load += new System.EventHandler(this.frmBangCapNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.qLThuVienDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,5 +85,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private QLThuVienDataSet qLThuVienDataSet;
+        private System.Windows.Forms.BindingSource nHANVIENBindingSource;
+        private QLThuVienDataSetTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
     }
 }

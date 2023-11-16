@@ -172,5 +172,11 @@ namespace WindowsFormsApp3.GUI
                 cboBangCap.SelectedIndex = cboBangCap.FindString(lsvNhanVien.SelectedItems[0].SubItems[5].Text);
             }
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            frmBangCapNhanVien f = new frmBangCapNhanVien();
+            f.ShowDialog();
+        }
     }
 }
