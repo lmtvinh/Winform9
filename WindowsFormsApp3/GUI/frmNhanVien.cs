@@ -176,11 +176,7 @@ namespace WindowsFormsApp3.GUI
         private void btnReport_Click(object sender, EventArgs e)
         {
             frmBangCapNhanVien f = new frmBangCapNhanVien();
-
             f.ShowDialog();
-
-            f.Show();
-
         }
     }
 }
