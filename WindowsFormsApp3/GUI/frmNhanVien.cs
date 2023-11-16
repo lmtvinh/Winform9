@@ -176,7 +176,11 @@ namespace WindowsFormsApp3.GUI
         private void btnReport_Click(object sender, EventArgs e)
         {
             frmBangCapNhanVien f = new frmBangCapNhanVien();
+<<<<<<< Updated upstream
             f.ShowDialog();
+=======
+            f.Show();
+>>>>>>> Stashed changes
         }
     }
 }
