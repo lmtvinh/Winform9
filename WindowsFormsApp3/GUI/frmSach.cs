@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp3.BLL;
-using WindowsFormsApp3.GUI;
 
 namespace WindowsFormsApp3.GUI
 {
@@ -56,6 +55,46 @@ namespace WindowsFormsApp3.GUI
             btnThoat.Enabled = val;
             btnLuu.Enabled = !val;
             btnHuy.Enabled = !val;
+        }
+        bool checkValue()
+        {
+            int valueNam, valueTriGia;
+            if (txtTenSach.Text == "")
+            {
+                MessageBox.Show("Tên sách không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (txtTacGia.Text == "")
+            {
+                MessageBox.Show("Tên tác giả không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (txtNhaXuatBan.Text == "")
+            {
+                MessageBox.Show("Tên nhà xuất bản không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (txtTriGia.Text == "")
+            {
+                MessageBox.Show("Trị giá không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (!int.TryParse(txtTriGia.Text, out valueTriGia))
+            {
+                MessageBox.Show("Trị giá phải là số", "Báo lỗi");
+                return false;
+            }
+            else if (txtNamXuatBan.Text == "")
+            {
+                MessageBox.Show("Năm xuất bản không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (!int.TryParse(txtNamXuatBan.Text, out valueNam))
+            {
+                MessageBox.Show("Năm xuất bản phải là số", "Báo lỗi");
+                return false;
+            }
+            return true;
         }
         private void frmSach_Load(object sender, EventArgs e)
         {
@@ -125,19 +164,22 @@ namespace WindowsFormsApp3.GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string ngay = String.Format("{0:MM/dd/yyyy}", dtpNgayNhap.Value);
-            //Định dạng ngày tương ứng với trong CSDL SQLserver
-            if (themmoi)
+            if (checkValue())
             {
-                sa.ThemSach(txtTenSach.Text, txtTacGia.Text, txtNamXuatBan.Text, txtNhaXuatBan.Text, txtTriGia.Text, ngay); MessageBox.Show("Thêm mới thành công");
+                string ngay = String.Format("{0:MM/dd/yyyy}", dtpNgayNhap.Value);
+                //Định dạng ngày tương ứng với trong CSDL SQLserver
+                if (themmoi)
+                {
+                    sa.ThemSach(txtTenSach.Text, txtTacGia.Text, txtNamXuatBan.Text, txtNhaXuatBan.Text, txtTriGia.Text, ngay); MessageBox.Show("Thêm mới thành công");
+                }
+                else
+                {
+                    sa.CapNhatSach(lsvSach.SelectedItems[0].SubItems[0].Text, txtTenSach.Text, txtTacGia.Text, txtNamXuatBan.Text, txtNhaXuatBan.Text, txtTriGia.Text, ngay); MessageBox.Show("Cập nhật thành công");
+                }
+                setButton(true);
+                HienthiSach();
+                setNull();
             }
-            else
-            {
-                sa.CapNhatSach(lsvSach.SelectedItems[0].SubItems[0].Text, txtTenSach.Text, txtTacGia.Text, txtNamXuatBan.Text, txtNhaXuatBan.Text, txtTriGia.Text, ngay); MessageBox.Show("Cập nhật thành công");
-            }
-            setButton(true);
-            HienthiSach();
-            setNull();
         }
 
         private void btnBaoCao_Click(object sender, EventArgs e)

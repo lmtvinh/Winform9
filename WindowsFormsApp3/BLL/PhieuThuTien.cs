@@ -56,5 +56,11 @@ namespace WindowsFormsApp3.BLL
             string str = string.Format("Update PHIEUTHUTIEN set SoTienNo = '{0}', SoTienThu = '{1}', MaDocGia = {2}, MaNhanVien = {3} where MaPhieuThuTien = {4}", tienno, tienthu, madocgia, manv, index_pt);
             db.ExecuteNonQuery(str);
         }
+        public void CapNhatTienNo(string index_dg, string tienno, string tienthu)
+        {
+            //Chuẩn bị câu lẹnh truy vấn
+            string str = string.Format("Update DOCGIA set TienNo = {0} where MaDocGia = {1}", int.Parse(tienno) - int.Parse(tienthu), index_dg);
+            db.ExecuteNonQuery(str);
+        }
     }
 }
