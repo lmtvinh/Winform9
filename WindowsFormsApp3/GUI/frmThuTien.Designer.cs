@@ -141,6 +141,7 @@ namespace WindowsFormsApp3.GUI
             // 
             // txtSoTienNo
             // 
+            this.txtSoTienNo.Enabled = false;
             this.txtSoTienNo.Location = new System.Drawing.Point(114, 26);
             this.txtSoTienNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoTienNo.Name = "txtSoTienNo";

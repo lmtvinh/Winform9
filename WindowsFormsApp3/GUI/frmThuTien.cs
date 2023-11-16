@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using WindowsFormsApp3.BLL;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -60,6 +61,27 @@ namespace WindowsFormsApp3.GUI
             btnThoat.Enabled = val;
             btnLuu.Enabled = !val;
             btnHuy.Enabled = !val;
+        }
+
+        bool checkValue()
+        {
+            int valueThu;
+            if (txtSoTienThu.Text == "")
+            {
+                MessageBox.Show("Số tiền thu không được trống", "Báo lỗi");
+                return false;
+            }
+            else if (!int.TryParse(txtSoTienThu.Text, out valueThu))
+            {
+                MessageBox.Show("Số tiền thu phải là số", "Báo lỗi");
+                return false;
+            }
+            else if (int.Parse(txtSoTienNo.Text) < valueThu)
+            {
+                MessageBox.Show("Không thu quá số tiền nợ", "Báo lỗi");
+                return false;
+            }
+            return true;
         }
         private void frmPhieuThu_Load(object sender, EventArgs e)
         {
@@ -128,20 +150,24 @@ namespace WindowsFormsApp3.GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            //Định dạng ngày tương ứng với trong CSDL SQLserver
-            if (themmoi)
+            if (checkValue())
             {
-                ptt.ThemPhieuThu(txtSoTienNo.Text, txtSoTienThu.Text, txtDocGia.Text, txtNhanVien.Text);
-                MessageBox.Show("Thêm mới thành công");
+                if (themmoi)
+                {
+                    ptt.ThemPhieuThu(txtSoTienNo.Text, txtSoTienThu.Text, txtDocGia.Text, txtNhanVien.Text);
+                    ptt.CapNhatTienNo(txtDocGia.Text, txtSoTienNo.Text, txtSoTienThu.Text);
+                    MessageBox.Show("Thêm mới thành công");
+                }
+                else
+                {
+                    ptt.CapNhatPhieuThu(lsvPhieuThu.SelectedItems[0].SubItems[0].Text, txtSoTienNo.Text, txtSoTienThu.Text, txtDocGia.Text, txtNhanVien.Text);
+                    ptt.CapNhatTienNo(txtDocGia.Text, txtSoTienNo.Text, txtSoTienThu.Text);
+                    MessageBox.Show("Cập nhật thành công");
+                }
+                setButton(true);
+                HienthiPhieuThu();
+                setNull();
             }
-            else
-            {
-                ptt.CapNhatPhieuThu(lsvPhieuThu.SelectedItems[0].SubItems[0].Text, txtSoTienNo.Text, txtSoTienThu.Text, txtDocGia.Text, txtNhanVien.Text);
-                MessageBox.Show("Cập nhật thành công");
-            }
-            setButton(true);
-            HienthiPhieuThu();
-            setNull();
         }
 
         private void cbbDocGia_SelectedIndexChanged(object sender, EventArgs e)
@@ -149,6 +175,9 @@ namespace WindowsFormsApp3.GUI
             if (cbbDocGia.SelectedItem != null)
             {
                 txtDocGia.Text = cbbDocGia.SelectedValue.ToString();
+                cbbDocGia.ValueMember = "TienNo";
+                txtSoTienNo.Text = cbbDocGia.SelectedValue.ToString();
+                cbbDocGia.ValueMember = "MaDocGia";
             }
         }
 
@@ -159,10 +188,10 @@ namespace WindowsFormsApp3.GUI
                 txtNhanVien.Text = cbbNhanVien.SelectedValue.ToString();
             }
         }
-
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-
+            fThuTien form = new fThuTien();
+            form.Show();
         }
     }
 }
