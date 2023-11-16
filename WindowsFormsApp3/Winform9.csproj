@@ -81,6 +81,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fDMSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fDMSach.designer.cs">
+      <DependentUpon>fDMSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmBangCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLThuVienDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\fDMSach.resx">
+      <DependentUpon>fDMSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBangCapNhanVien.resx">
       <DependentUpon>frmBangCapNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +167,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="rBangCapNhanVien.rdlc" />
+    <EmbeddedResource Include="rDMSach.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
