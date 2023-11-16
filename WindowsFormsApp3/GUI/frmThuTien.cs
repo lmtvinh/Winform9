@@ -210,7 +210,7 @@ namespace WindowsFormsApp3.GUI
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            frmThuTien form = new frmThuTien();
+            fThuTien form = new fThuTien();
             form.Show();
         }
     }
